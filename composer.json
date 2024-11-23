@@ -1,6 +1,6 @@
 {
     "name": "magefine/performance-mess-detector",
-    "description": "A Magento 2 module detects performances mess",
+    "description": "This Magento 2 module provides tools to monitor and improve performance by detecting and logging potential bottlenecks in the system. It specifically focuses on tracking slow controller actions, repeated SQL queries, and other performance issues that may impact your Magento store.",
     "type": "magento2-module",
     "license": [
         "OSL-3.0",
