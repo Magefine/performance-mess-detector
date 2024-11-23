@@ -12,10 +12,12 @@ This Magento 2 module provides tools to monitor and improve performance by detec
   Logs the execution time of all controller actions and identifies actions that exceed a configurable threshold (e.g., 500 ms).
 
 - **SQL Query Optimization**  
-  Detects identical or repeated SQL queries executed during a single request cycle.
+  Detects identical or repeated SQL queries executed during a single request cycle. Detects slow queries.
 
 - **Customizable Thresholds**  
-  Allows you to configure thresholds for what constitutes a "slow" action or query via the Magento Admin panel.
+  Allows you to configure thresholds for what constitutes a "slow" action or query via the Magento Admin panel. (INCOMING SOON)
+
+- **Full stack trace of any logged notice**
 
 - **Detailed Logging**  
   Logs all detected issues, including the following:
