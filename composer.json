@@ -1,0 +1,18 @@
+{
+    "name": "magefine/performance-mess-detector",
+    "description": "A Magento 2 module detects performances mess",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "php": "8.*"
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Magefine\\PerformanceMessDetector\\": ""
+        }
+    }
+}

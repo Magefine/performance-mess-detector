@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="multiple_product_loads" type="Magefine\PerformanceMessDetector\Plugin\MultipleProductLoads" sortOrder="1" disabled="false"/>
+    </type>
+    <type name="Magento\Catalog\Model\Category">
+        <plugin name="multiple_category_loads" type="Magefine\PerformanceMessDetector\Plugin\MultipleCategoryLoads" sortOrder="1" disabled="false"/>
+    </type>
+    <type name="Magento\Framework\DB\Adapter\Pdo\Mysql">
+        <plugin name="duplicate_sql_queries" type="Magefine\PerformanceMessDetector\Plugin\DuplicateQueries" sortOrder="1" disabled="false"/>
+    </type>
+    <type name="Magento\Framework\DB\Adapter\Pdo\Mysql">
+        <plugin name="detect_slow_queries" type="Magefine\PerformanceMessDetector\Plugin\LogSlowQueries" sortOrder="1" disabled="false"/>
+    </type>
+    <type name="Magento\Framework\App\Action\Action">
+        <plugin name="track_controller_execution_time" type="Magefine\PerformanceMessDetector\Plugin\DetectSlowController" sortOrder="1" disabled="false"/>
+    </type>
+</config>
